@@ -7,6 +7,9 @@ class Calculator{
         System.out.print("Enter a another number: ");
         int b=s.nextInt();
 
+        System.out.println("Enter your choice: \n1.Add\n2.Sub\n3.mul\n4.div");
+        int ch=s.nextInt();
+
         int add=a+b;
         int sub=a-b;
         int mul=a*b;
@@ -18,10 +21,17 @@ class Calculator{
             div=0;
         }
 
-        System.out.println("Add: "+add);
-        System.out.println("Sub: "+sub);
-        System.out.println("Mul: "+mul);
-        System.out.println("Div: "+div);
+        System.out.println();
+        
+        switch (ch){
+        
+        case 1 ->   System.out.println("Add: "+add);
+        case 2 -> System.out.println("Sub: "+sub);
+        case 3 -> System.out.println("Mul: "+mul);
+        case 4 -> System.out.println("Div: "+div);
+        default -> System.out.println("Enter a valid Choice");
+
+        }
 
     }
 }
